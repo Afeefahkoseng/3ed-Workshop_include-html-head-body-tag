@@ -8,63 +8,59 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-<header>
-    <div class="container">
-        <h1>My Portfolio</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </div>
-</header>
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>สวัสดีครับ ฉันชื่อ [ชื่อคุณ] เป็นนักพัฒนาเว็บไซต์มือใหม่ สนใจด้านการสร้างเว็บสวยและใช้งานง่าย</p>
+        </div>
+    </section>
 
-<section id="about">
-    <div class="container">
-        <h2>About Me</h2>
-        <p>Hello! I'm a passionate web developer learning HTML, CSS, and JS. This is my simple portfolio site.</p>
-        <img src="https://via.placeholder.com/300x200" alt="Profile Photo">
-    </div>
-</section>
-
-<section id="projects">
-    <div class="container">
-        <h2>My Projects</h2>
-        <div class="projects-grid">
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>My Projects</h2>
             <div class="project-card">
-                <img src="https://via.placeholder.com/300x200" alt="Project 1">
                 <h3>Project One</h3>
-                <p>Short description of project one.</p>
+                <p>เว็บไซต์ร้านค้าออนไลน์ สำหรับการเรียนรู้ HTML, CSS และ JavaScript</p>
+                <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
             </div>
             <div class="project-card">
-                <img src="https://via.placeholder.com/300x200" alt="Project 2">
                 <h3>Project Two</h3>
-                <p>Short description of project two.</p>
+                <p>ระบบจัดการฐานข้อมูลสำหรับการเรียน Database Design</p>
+                <p><strong>Technologies:</strong> MySQL, PHP</p>
             </div>
             <div class="project-card">
-                <img src="https://via.placeholder.com/300x200" alt="Project 3">
                 <h3>Project Three</h3>
-                <p>Short description of project three.</p>
+                <p>เว็บไซต์ Portfolio สำหรับแสดงผลงานส่วนตัว</p>
+                <p><strong>Technologies:</strong> HTML, CSS</p>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="contact">
-    <div class="container">
-        <h2>Contact Me</h2>
-        <p>Email: example@example.com</p>
-        <p>Phone: 012-345-6789</p>
-    </div>
-</section>
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: example@email.com</p>
+            <p>Phone: +66 123 456 789</p>
+        </div>
+    </section>
 
-<footer>
-    <div class="container">
-        <p>&copy; 2025 My Portfolio</p>
-    </div>
-</footer>
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

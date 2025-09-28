@@ -1,2 +1,1 @@
-// สำหรับโค้ดง่าย ๆ ตอนนี้เราไม่ใช้ JS มาก
-console.log("Portfolio site loaded.");
+document.getElementById("year").textContent = new Date().getFullYear();
