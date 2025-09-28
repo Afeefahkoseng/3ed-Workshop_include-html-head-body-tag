@@ -1,183 +1,70 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Simple & beautiful demo e-commerce landing page for students' exercise." />
-  <title>MyShop • Startup Online Store</title>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simple Portfolio Website">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="#">MyShop</a>
 
-      <nav class="nav">
-        <a href="#features">Features</a>
-        <a href="#products">Products</a>
-        <a href="#about">About</a>
-        <button id="cart-btn" class="cart-btn">Cart (<span id="cart-count">0</span>)</button>
-      </nav>
-
-      <button class="mobile-toggle" id="mobileToggle">☰</button>
+<header>
+    <div class="container">
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </div>
-  </header>
+</header>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-text">
-          <h1>Shop smart. Shop local. Shop MyShop.</h1>
-          <p class="lead">Beautifully designed demo storefront — perfect for learning HTML, CSS, and JavaScript. Explore sample products and try the mini cart.</p>
-          <div class="hero-actions">
-            <a class="btn primary" href="#products">Browse Products</a>
-            <a class="btn ghost" href="#about">Learn More</a>
-          </div>
-
-          <ul class="trust-list">
-            <li>Free shipping over ฿800</li>
-            <li>30-day returns</li>
-            <li>Secure payments</li>
-          </ul>
-        </div>
-
-        <div class="hero-card">
-          <div class="product-preview">
-            <div class="badge">New</div>
-            <img src="https://m.media-amazon.com/images/I/719jZleyM4L.jpg" alt="Featured product">
-            <div class="preview-info">
-              <h3>Nordic Lamp</h3>
-              <p>Minimalist table lamp — warm light for cozy evenings.</p>
-              <div class="price-add">
-                <div class="price">฿650</div>
-                <button class="btn small add-btn" data-id="p-featured">Add</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FEATURES -->
-    <section id="features" class="section">
-      <div class="container">
-        <h2 class="section-title">Why choose MyShop?</h2>
-        <div class="grid-3">
-          <div class="feature">
-            <div class="icon">🚚</div>
-            <h4>Fast & Free Shipping</h4>
-            <p>We ship quickly and include free shipping for larger orders.</p>
-          </div>
-          <div class="feature">
-            <div class="icon">🔒</div>
-            <h4>Secure Checkout</h4>
-            <p>Payments are protected and we respect your privacy.</p>
-          </div>
-          <div class="feature">
-            <div class="icon">⭐</div>
-            <h4>Handpicked Quality</h4>
-            <p>Each item is carefully selected for design and durability.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PRODUCTS -->
-    <section id="products" class="section">
-      <div class="container">
-        <h2 class="section-title">Featured Products</h2>
-        <div class="product-grid" id="productGrid">
-          <!-- Product cards inserted statically / can be dynamic -->
-          <article class="product-card">
-            <img src="https://ae01.alicdn.com/kf/Sc6e657009c2d48578f5ace22d846de03L.jpg" alt="Coffee Cup">
-            <h3>Ceramic Coffee Cup</h3>
-            <p class="muted">Classic design, 300ml.</p>
-            <div class="card-bottom">
-              <div class="price">฿350</div>
-              <button class="btn add-btn" data-id="p1" data-name="Ceramic Coffee Cup" data-price="350">Add to Cart</button>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <img src="https://m.media-amazon.com/images/I/71jPt4ZRG+L._UY1000_.jpg" alt="Backpack">
-            <h3>Urban Backpack</h3>
-            <p class="muted">Water-resistant, laptop pocket.</p>
-            <div class="card-bottom">
-              <div class="price">฿1,150</div>
-              <button class="btn add-btn" data-id="p2" data-name="Urban Backpack" data-price="1150">Add to Cart</button>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <img src="https://m.media-amazon.com/images/I/51fkoZe-K6L.jpg" alt="Earbuds">
-            <h3>Wireless Earbuds</h3>
-            <p class="muted">Noise-cancelling, 20h battery.</p>
-            <div class="card-bottom">
-              <div class="price">฿1,890</div>
-              <button class="btn add-btn" data-id="p3" data-name="Wireless Earbuds" data-price="1890">Add to Cart</button>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <img src="https://vanness1938.com/cdn/shop/products/Grain_B6_Dk_Brn.jpg?v=1571439286" alt="Notebook">
-            <h3>Hardcover Notebook</h3>
-            <p class="muted">B6, 150 pages.</p>
-            <div class="card-bottom">
-              <div class="price">฿79</div>
-              <button class="btn add-btn" data-id="p4" data-name="Hardcover Notebook" data-price="220">Add to Cart</button>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section muted-section">
-      <div class="container about-grid">
-        <div>
-          <h2>About MyShop</h2>
-          <p>MyShop is a demo storefront built for students learning web development. This page demonstrates semantic HTML, responsive CSS, and basic JavaScript interactions (cart). Use it as a starter and expand with a backend later.</p>
-          <ul>
-            <li>Written with accessibility in mind</li>
-            <li>Responsive layout for phones and desktops</li>
-            <li>Easy to customize and extend</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- CART SIDEBAR (hidden by default) -->
-  <aside id="cartSidebar" class="cart-sidebar" aria-hidden="true">
-    <div class="cart-header">
-      <h3>Your Cart</h3>
-      <button id="closeCart" class="close-cart">✕</button>
+<section id="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>Hello! I'm a passionate web developer learning HTML, CSS, and JS. This is my simple portfolio site.</p>
+        <img src="https://via.placeholder.com/300x200" alt="Profile Photo">
     </div>
-    <div id="cartItems" class="cart-items">
-      <p class="muted">Your cart is empty.</p>
-    </div>
-    <div class="cart-footer">
-      <div class="total">Total: <span id="cartTotal">฿0</span></div>
-      <button id="checkoutBtn" class="btn primary block">Checkout</button>
-    </div>
-  </aside>
+</section>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>&copy; <span id="year"></span> MyShop • Demo Store for Students</p>
-      <div class="socials">
-        <a href="#" aria-label="facebook">Facebook</a>
-        <a href="#" aria-label="instagram">Instagram</a>
-      </div>
+<section id="projects">
+    <div class="container">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                <h3>Project One</h3>
+                <p>Short description of project one.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200" alt="Project 2">
+                <h3>Project Two</h3>
+                <p>Short description of project two.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200" alt="Project 3">
+                <h3>Project Three</h3>
+                <p>Short description of project three.</p>
+            </div>
+        </div>
     </div>
-  </footer>
+</section>
 
-  <script src="script.js"></script>
+<section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>Email: example@example.com</p>
+        <p>Phone: 012-345-6789</p>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 My Portfolio</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
