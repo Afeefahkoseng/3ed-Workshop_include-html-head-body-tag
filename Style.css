@@ -1,0 +1,334 @@
+:root {
+    body {
+        margin: 0;
+        font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        background: var(--page-bg);
+        color: #222;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        line-height: 1.45;
+        padding: 24px;
+    }
+
+    a {
+        color: var(--accent);
+        text-decoration: none
+    }
+
+    img {
+        max-width: 100%;
+        display: block
+    }
+
+    .container {
+        max-width: 1100px;
+        margin: 0 auto
+    }
+
+    header.site-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 18px;
+    }
+
+    .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px
+    }
+
+    .logo {
+        width: 52px;
+        height: 52px;
+        border-radius: 10px;
+        background: linear-gradient(135deg, var(--accent), #6cc1ff);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-weight: 700;
+        font-size: 18px
+    }
+
+    .brand-text .brand-name {
+        font-weight: 700
+    }
+
+    .brand-text .brand-sub {
+        font-size: 0.9rem;
+        color: var(--muted)
+    }
+
+    .hero {
+        background: linear-gradient(180deg, rgba(11, 121, 208, 0.06), transparent);
+        padding: 20px;
+        border-radius: var(--radius);
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 18px
+    }
+
+    .hero-left {
+        flex: 1;
+        min-width: 260px
+    }
+
+    .hero-right {
+        width: 320px;
+        min-width: 220px
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 1.6rem
+    }
+
+    .lead {
+        margin: 8px 0;
+        color: var(--muted)
+    }
+
+    .hero-cta {
+        margin-top: 12px;
+        display: flex;
+        gap: 8px
+    }
+
+    .promo-card {
+        background: #fff;
+        padding: 12px;
+        border-radius: 10px;
+        box-shadow: 0 6px 16px rgba(16, 24, 40, 0.06)
+    }
+
+    .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 16px;
+        margin: 18px 0
+    }
+
+    .card {
+        background: var(--card-bg);
+        border-radius: 12px;
+        padding: 12px;
+        box-shadow: 0 6px 18px rgba(16, 24, 40, 0.06);
+        display: flex;
+        flex-direction: column;
+        gap: 10px
+    }
+
+    .card .imgwrap {
+        height: 150px;
+        border-radius: 10px;
+        overflow: hidden;
+        background: #eee;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    .card h3 {
+        margin: 0;
+        font-size: 1.05rem
+    }
+
+    .price {
+        font-weight: 700
+    }
+
+    .muted {
+        color: var(--muted);
+        font-size: 0.95rem
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 8px 12px;
+        border-radius: 10px;
+        background: var(--accent);
+        color: #fff;
+        border: 0;
+        cursor: pointer;
+        font-weight: 600
+    }
+
+    .btn.ghost {
+        background: transparent;
+        color: var(--accent);
+        border: 1px solid rgba(11, 121, 208, 0.18)
+    }
+
+    .flex {
+        display: flex;
+        gap: 8px;
+        align-items: center
+    }
+
+    .right {
+        margin-left: auto
+    }
+
+    .cart-btn {
+        position: relative
+    }
+
+    .cart-badge {
+        position: absolute;
+        right: -8px;
+        top: -8px;
+        background: #ff4d4f;
+        color: #fff;
+        border-radius: 999px;
+        padding: 4px 7px;
+        font-size: 12px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12)
+    }
+
+    .drawer {
+        position: fixed;
+        right: 18px;
+        bottom: 18px;
+        width: 380px;
+        max-width: 92%;
+        background: #fff;
+        border-radius: 14px;
+        box-shadow: 0 20px 40px rgba(2, 6, 23, 0.2);
+        overflow: hidden;
+        transform: translateY(120%);
+        transition: transform .28s cubic-bezier(.2, .9, .3, 1);
+        z-index: 1200
+    }
+
+    .drawer.open {
+        transform: translateY(0)
+    }
+
+    .drawer .head {
+        padding: 12px 16px;
+        border-bottom: 1px solid #f0f2f7;
+        display: flex;
+        align-items: center
+    }
+
+    .drawer .body {
+        max-height: 320px;
+        overflow: auto;
+        padding: 12px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px
+    }
+
+    .drawer .foot {
+        padding: 12px 16px;
+        border-top: 1px solid #f0f2f7;
+        display: flex;
+        align-items: center;
+        gap: 8px
+    }
+
+    .cart-item {
+        display: flex;
+        gap: 10px;
+        align-items: center
+    }
+
+    .cart-item .thumb {
+        width: 56px;
+        height: 48px;
+        border-radius: 8px;
+        background: #f5f6fb;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    .qty-controls {
+        display: flex;
+        gap: 6px;
+        align-items: center
+    }
+
+    .qty-controls button {
+        padding: 4px 8px;
+        border-radius: 6px;
+        border: 1px solid #ddd;
+        background: transparent;
+        cursor: pointer
+    }
+
+    footer {
+        margin-top: 28px;
+        color: var(--muted);
+        font-size: 0.9rem
+    }
+
+    .contact-section {
+        margin-top: 18px;
+        background: linear-gradient(180deg, #fff, transparent);
+        padding: 12px;
+        border-radius: 10px
+    }
+
+    .order-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        margin-top: 12px
+    }
+
+    .order-form input,
+    .order-form textarea {
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #e6e9ef
+    }
+
+    .order-form textarea {
+        grid-column: span 2;
+        min-height: 80px
+    }
+
+    .form-actions {
+        grid-column: span 2;
+        display: flex;
+        gap: 8px;
+        align-items: center
+    }
+
+    .form-note {
+        margin-left: auto
+    }
+
+    @media (max-width:720px) {
+        .hero {
+            flex-direction: column;
+            align-items: flex-start
+        }
+
+        header.site-header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px
+        }
+
+        .drawer {
+            right: 8px;
+            left: 8px;
+            width: auto
+        }
+
+        .order-form {
+            grid-template-columns: 1fr
+        }
+
+        .order-form textarea {
+            grid-column: span 1
+        }
+    }

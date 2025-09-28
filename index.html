@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+</div>
+</section>
+
+<!-- Product Grid -->
+<section id="products" aria-label="Products">
+<h2>สินค้าแนะนำ</h2>
+<div class="products" id="productGrid">
+<!-- JavaScript will render product cards here -->
+</div>
+</section>
+
+<!-- Contact / Order form -->
+<section id="contact" class="contact-section">
+<h2>สั่งซื้อ / ติดต่อ</h2>
+<p class="muted">กรอกรายละเอียดเพื่อสั่งซื้อหรือสอบถามข้อมูลเพิ่มเติม — ตัวอย่างนี้ส่งข้อมูลไปที่ Formsubmit.co (เปลี่ยน action เป็นของคุณเมื่อใช้งานจริง)</p>
+
+<form id="orderForm" action="https://formsubmit.co/your-email@example.com" method="POST" target="_blank" class="order-form">
+<input type="text" name="name" placeholder="ชื่อ-นามสกุล" required>
+<input type="email" name="email" placeholder="อีเมล" required>
+<input type="tel" name="phone" placeholder="เบอร์โทร" required>
+<input type="text" name="address" placeholder="ที่อยู่จัดส่ง" required>
+<textarea name="order_details" placeholder="รายการสินค้าที่ต้องการ (หรือข้อความเพิ่มเติม)"></textarea>
+
+<!-- Hidden field: we will fill cart JSON here just before submitting -->
+<input type="hidden" name="cart_json" id="cart_json_input" />
+
+<div class="form-actions">
+<button type="submit" class="btn">ส่งคำสั่งซื้อ</button>
+<button type="button" id="fillSample" class="btn ghost">ใส่ตัวอย่างคำสั่งอัตโนมัติ</button>
+<div class="muted form-note">หรือสั่งผ่านตะกร้าด้านล่าง</div>
+</div>
+</form>
+</section>
+
+<footer>
+<p>&copy; 2025 SampleMart — หน้าเรียนรู้และสาธิต. เกิดจากตัวอย่างการเขียนเว็บ.</p>
+</footer>
+</main>
+</div>
+
+<!-- Cart Drawer -->
+<div class="drawer" id="cartDrawer" aria-hidden="true">
+<div class="head">
+<strong>ตะกร้าสินค้า</strong>
+<div class="right">
+<button class="btn ghost" id="closeCart">ปิด</button>
+</div>
+</div>
+
+<div class="body" id="cartBody">
+<p class="muted">ยังไม่มีสินค้าในตะกร้า</p>
+</div>
+
+<div class="foot">
+<div>
+<div class="muted">รวมทั้งหมด:</div>
+<div class="total" id="cartTotal">0 ฿</div>
+</div>
+<div class="right">
+<button class="btn" id="checkoutBtn">ไปชำระเงิน</button>
+</div>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
